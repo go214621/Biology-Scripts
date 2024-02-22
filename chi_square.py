@@ -20,7 +20,6 @@ critical_values = (
     24.996      # 15
 )
 
-# Returns whether the null hypothesis is to be accepted (true) or rejected (false)
 def chi_square(observed, expected, degrees_freedom, num_places):
     chi = ((observed - expected) ** 2) / expected
     print("--------------------------")
