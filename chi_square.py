@@ -43,7 +43,7 @@ def main():
                 raise ValueError
             break
         except ValueError:
-            print("Invalid input. Please enter a valid integer between 1 and " + str(len(critical_values) - 1))
+            print("Invalid input. Please enter a valid integer between 2 and " + str(len(critical_values) - 1))
 
     num_places_str = input("Round to how many decimal places? ")
     if num_places_str.strip() == "":
