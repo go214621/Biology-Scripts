@@ -23,8 +23,8 @@ critical_values = (
 def chi_square(observed, expected, degrees_freedom, num_places):
     chi = ((observed - expected) ** 2) / expected
     print("--------------------------")
-    print("Observed - Expected      : " + str(round(observed - expected, 2)))
-    print("(Observed - Expected)^2  : " + str(round((observed - expected)**2, 2)))
+    print("Observed - Expected      : " + str(round(observed - expected, num_places)))
+    print("(Observed - Expected)^2  : " + str(round((observed - expected)**2, num_places)))
     print("Chi-square value         : " + str(round(chi, num_places)))
     print("Critical value           : " + str(critical_values[degrees_freedom]))
     if (chi <= critical_values[degrees_freedom]):
